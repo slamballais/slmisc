@@ -9,3 +9,5 @@ Encoding: UTF-8
 LazyData: true
 Imports:
   magrittr
+Suggests: testthat
+RoxygenNote: 6.1.0
