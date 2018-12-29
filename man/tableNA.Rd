@@ -6,6 +6,9 @@
 \usage{
 tableNA(...)
 }
+\arguments{
+\item{...}{Further arguments for `table`}
+}
 \description{
 Wrapper for table(..., useNA = "always")
 }

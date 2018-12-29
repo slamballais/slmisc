@@ -6,6 +6,9 @@
 \usage{
 f2n(f)
 }
+\arguments{
+\item{f}{a factor that contains values that can be converted with as.numeric}
+}
 \description{
 Convert factor into numeric
 }

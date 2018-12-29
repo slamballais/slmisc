@@ -48,19 +48,24 @@ headn <- function(x, ...) {
 
 
 #' Wrapper for summary(lm(...))
+#' @param ... further arguments for `lm`
+#' @importFrom stats lm
 
-lms <- function(...) summary(lm(...))
+lms <- function(...) summary(stats::lm(...))
 
 #' Wrapper for length(which(...))
+#'
+#' @param ... further arguments for `which`
 
 lw <- function(...) length(which(...))
 
 #' Finds the modes (modi) central tendency
 #'
 #' @param x a vector/factor for which to find the mode
-#' @param out an integer that defines the maximum number of modi to display; a warning is shown if more modi are found
+#' @param out an integer that defines the maximum number of modi to display
+#' @param warn a logical; if TRUE, a warning is displayed if more modi are found than `out`
 
-Mode <- function(x, out=NULL, warn = T) {
+Mode <- function(x, out = NULL, warn = TRUE) {
   ux <- unique(x)
   tab <- tabulate(match(x, ux))
   y <- ux[which(tab == max(tab))]
@@ -72,6 +77,8 @@ Mode <- function(x, out=NULL, warn = T) {
 }
 
 #' Wrapper for table(..., useNA = "always")
+#' 
+#' @param ... Further arguments for `table`
 
 tableNA <- function(...) table(..., useNA = "always")
 

@@ -6,6 +6,9 @@
 \usage{
 lw(...)
 }
+\arguments{
+\item{...}{further arguments for `which`}
+}
 \description{
 Wrapper for length(which(...))
 }

@@ -4,12 +4,14 @@
 \alias{Mode}
 \title{Finds the modes (modi) central tendency}
 \usage{
-Mode(x, out = NULL, warn = T)
+Mode(x, out = NULL, warn = TRUE)
 }
 \arguments{
 \item{x}{a vector/factor for which to find the mode}
 
-\item{out}{an integer that defines the maximum number of modi to display; a warning is shown if more modi are found}
+\item{out}{an integer that defines the maximum number of modi to display}
+
+\item{warn}{a logical; if TRUE, a warning is displayed if more modi are found than `out`}
 }
 \description{
 Finds the modes (modi) central tendency

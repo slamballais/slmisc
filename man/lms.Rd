@@ -6,6 +6,9 @@
 \usage{
 lms(...)
 }
+\arguments{
+\item{...}{further arguments for `lm`}
+}
 \description{
 Wrapper for summary(lm(...))
 }
