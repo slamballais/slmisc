@@ -1,0 +1,11 @@
+Package: slmisc
+Title: Miscellaneous functions, mostly command line wrappers
+Version: 0.0.1
+Authors@R: person("Sander", "Lamballais", email = "s.lamballaistessensohn@erasmusmc.nl", role = c("aut", "cre"))
+Description: This package contains a bunch of functions that I use on the command line. Most of them are wrappers for one or two nested functions
+Depends: R (>= 3.4.3)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+  magrittr
